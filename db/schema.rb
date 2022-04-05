@@ -10,14 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_05_020142) do
+ActiveRecord::Schema.define(version: 2022_04_05_025204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "supports", force: :cascade do |t|
+    t.string "task", null: false
+    t.text "content", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["task"], name: "index_supports_on_task", unique: true
+  end
+
   create_table "users", force: :cascade do |t|
-    t.string "task"
-    t.text "content"
+    t.string "task", null: false
+    t.text "content", null: false
     t.index ["task"], name: "index_users_on_task", unique: true
   end
 
