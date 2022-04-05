@@ -24,4 +24,7 @@ Things you may want to cover:
 
 * ...
 =======
-
+#User model
+|Column|Type|Options|
+|task|string|null: false,add_index: true
+|content|text|
