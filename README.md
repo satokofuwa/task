@@ -24,6 +24,7 @@ Things you may want to cover:
 
 * ...
 =======
+
 #User model
 ```
 |Column              |Type     |Options|
@@ -37,7 +38,7 @@ index_users_on_email  index  unique: true
 
 #support model 
 ```
-|Column|Type|Options|
+|Column　　　　　　　　　　|Type　　　　|Options|
  task                    string    null: false
  content                 text      null: false
  created_at              datetime  precision: 6, null: false
