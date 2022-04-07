@@ -1,5 +1,5 @@
 class SupportsController < ApplicationController
-  before_action :set_support, only: %i[ show edit update destroy ]
+  before_action :set_support, only: %i[edit update destroy ]
 
   def index
     @supports = Support.all
@@ -31,7 +31,8 @@ class SupportsController < ApplicationController
     end
   end
   
-  def show
+  def show 
+    @supports = Support.all
   end
 
   def destroy

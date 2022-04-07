@@ -1,0 +1,17 @@
+<table>
+  <thead>
+  <h3> Task一覧</h3>
+
+ <%= link_to 'Task 新規作成', new_support_path %></button>
+ <%= link_to 'Task 管理画面', supports_path %></button>
+  </thead>
+
+  <tbody>
+            <% @supports.each do |p| %>
+            <tr>
+              <td><%= p.task %></td>
+              <td><%= p.content %></td>
+            <tr>
+            <%end%>
+  </tbody>
+</table>

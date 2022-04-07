@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'supports/index'
+  root "supports#index"
   resources :supports
+  resources :users
+  
 
 end
