@@ -1,0 +1,11 @@
+<%= form_with(model: @support, local: true) do |form| %>
+  <%= form.label :task %>
+  <%= form.text_field :task %>
+  <%= form.label :content %>
+  <%= form.text_field :content %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+  <%= link_to "一覧画面にもどる", supports_path%>
