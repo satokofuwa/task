@@ -30,7 +30,6 @@ RSpec.describe 'タスク管理機能', type: :system do
       before do
         visit support_path(:support)
       end
-
       it '登録されたタスクが詳細ページに表示されているかを確認する' do
         expect(page).to have_content '仕事'
       end

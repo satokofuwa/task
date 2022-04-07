@@ -23,7 +23,6 @@ class SupportsController < ApplicationController
   end
 
   def update
-
     if @support.update(support_params)    
       redirect_to supports_url, notice: "Task has been successfully updated." 
     else
@@ -37,7 +36,7 @@ class SupportsController < ApplicationController
 
   def destroy
     if @support.present?
-      @support.destroy
+         @support.destroy
       redirect_to supports_url, notice:  "Task has been deleted!"
     end
   end 
