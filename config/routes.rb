@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  root "supports#index"
-  resources :supports
+  root "tasks#index"
+  resources :tasks
   resources :users
   
 

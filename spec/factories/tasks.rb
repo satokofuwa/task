@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :support do
+  factory :task do
     task { "家事"}
     content { "掃除・洗濯・炊飯" }
   end
