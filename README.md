@@ -16,7 +16,7 @@
 
 |Column              |Type     |Options| | | | |
 |:----|:----|:----|:----|:----|:----|:----|
-| task                 |   string    |null: |FALSE| | | |
+| title                |   string    |null: |FALSE| | | |
 | content              |   text      |null: |FALSE| | | |
 | created_at           |   datetime  |precision: |6, |null: |FALSE|
 | updated_at           |   datetime  |precision: |6, |null: |FALSE|

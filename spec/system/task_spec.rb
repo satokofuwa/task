@@ -1,13 +1,13 @@
 require 'rails_helper'
 RSpec.describe 'タスク管理機能', type: :system do
   
-  let(:task){FactoryBot.create(:task, task: '仕事',content: 'ミーティング')}
+  let(:task){FactoryBot.create(:task, title: '仕事',content: 'ミーティング')}
 
   describe '新規作成機能' do
     context 'タスクを新規作成した場合' do
       it '作成したタスクが表示される' do
         visit new_task_path
-        fill_in 'Task', with: '部屋の片付け'
+        fill_in 'Title', with: '部屋の片付け'
         fill_in 'Content', with: 'リビングと和室の片付けをする'
         click_button 'Create task'
       end

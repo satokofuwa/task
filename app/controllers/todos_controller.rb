@@ -1,4 +1,4 @@
-class TasksController < ApplicationController
+class TodosController < ApplicationController
   before_action :set_task, only: %i[edit update destroy ]
 
   def index
